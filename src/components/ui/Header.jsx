@@ -9,6 +9,7 @@ const Header = () => {
   const [theme, setTheme] = useState('dark');
   const [user, setUser] = useState(null);
 
+  
   useEffect(() => {
     // Check theme from localStorage
     const savedTheme = localStorage.getItem('theme');

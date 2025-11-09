@@ -14,7 +14,8 @@ import Register from './pages/auth/Register';
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    // use Vite's BASE_URL so the router works both in dev ("/") and when built with a base (e.g. "/Edupath/")
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ErrorBoundary>
       <ScrollToTop />
       <RouterRoutes>
